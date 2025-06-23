@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Balones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f8fb;
+    color: #222;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.productos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+    width: 260px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.producto h3 {
+    margin: 0.8rem 0 0.4rem 0;
+}
+
+.precio {
+    display: block;
+    font-size: 1.2rem;
+    color: #1e88e5;
+    margin: 0.3rem 0 1rem 0;
+}
+
+.producto button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.producto button:hover {
+    background: #1565c0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+form button {
+    margin-top: 1.5rem;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #1565c0;
+}
+
+footer {
+    background: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+</style>
+<body>
+    <header>
+        <h1>Tienda de Balones</h1>
+        <nav>
+            <a href="#balones">Balones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="balones">
+            <h2>Catálogo de Balones</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="https://m.media-amazon.com/images/I/610XkjsaObL._AC_SL1000_.jpg" alt="Balón de fútbol">
+                    <h3>Balón de Fútbol</h3>
+                    <p>Balón profesional para fútbol. Ideal para partidos y entrenamientos.</p>
+                    <span class="precio">$500.00</span>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="https://s3.amazonaws.com/dinder.com.br/wp-content/uploads/sites/419/2019/05/BOLA-DE-BASQUETE-FIBA.jpg" alt="Balón de baloncesto">
+                    <h3>Balón de Baloncesto</h3>
+                    <p>Balón de caucho resistente, perfecto para canchas exteriores e interiores.</p>
+                    <span class="precio">$399.00</span>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.feAeNyVsPUPIvBiVslzh4wHaHa&pid=Api&P=0&h=180" alt="Balón de voleibol">
+                    <h3>Balón de Voleibol</h3>
+                    <p>Balón ligero y duradero, ideal para juegos en la playa o en interiores.</p>
+                    <span class="precio">$299.00</span>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tienda de Balones. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
